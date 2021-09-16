@@ -1,0 +1,248 @@
+                /* ПОЛИТРА ЦВЕТОВ */
+:root {
+    --main-color: #757575; /*Основной цвет текста - цвет абзаца*/
+    --secondary-color: #212121; /*Вторичный цвет текста - цвет заголовков*/
+    --accent-color: #2196F3; /*Акцент - цвет ссылок*/
+    --brand-white-color: #FFFFFF; /*Основной белый цвет логотип, футер, герой*/
+    --logo-black-color: #000000; /*Цвет логотипа в шапке*/
+    --mail-footer-color: rgba(255, 255, 255, 0.6); /*Цвет почты футера*/
+    --main-background: #FFFFFF; /*Основной цвет фона*/
+    --secondary-background: #F5F4FA; /*Вторичный цвет фона*/
+    --footer-background: #2F303A; /*Фон футера и Героя*/
+    --btn-background: #F5F4FA; /*Цвет кнопки*/
+    --header-background: #FFFFFF; /*Фон Header*/
+}
+
+/* ----------------ОБЩИЕ КЛАССЫ СЕКЦИЙ------------------ */
+.body {                /*Цвет и Шрифт текста параграфов в секциях*/
+    color: var(--main-color);
+    font-family: Roboto, sans-serif;
+}
+.list-none {           /*Убираем маркировку списка*/
+    list-style: none; 
+}
+.link-none {          /*Убираем дикорирование ссылок*/
+    text-decoration: none;
+}
+.section-title {   /*Заголовок Секции*/
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* -----------------ШАПКА (HEADER)-------------------- */
+.header {
+    background-color: var(--header-background);
+}
+/* Логотип */
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-black {
+    color: var(--logo-black-color);
+}
+/* Навигация */
+.site-nav {
+
+}
+.site-nav-item {
+
+}
+.site-nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav-link.current {
+    color: var(--accent-color);
+}
+.contacts-nav {
+
+}
+.contacts-nav-item {
+
+}
+.contacts-nav-link {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.site-nav-link:hover, .site-nav-link:focus, .contacts-nav-link:hover, .contacts-nav-link:focus {
+    color: var(--accent-color);
+}
+
+/* ------------------стр Студия*/
+
+/* -------------------ГЕРОЙ------------------------------ */
+.hero {
+    background-color: var(--footer-background);
+}
+.hero-title {
+    color: var(--brand-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    color: var(--brand-white-color);
+    cursor: pointer;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* ------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
+.features {
+    background-color: var(--main-background);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.features-item {
+
+}
+.features-title {  /*Заголовок h3 секция Особенности*/
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-text {
+
+}
+
+/* ----------------СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ ----------------*/
+.work {
+    background-color: var(--main-background);
+}
+.work-item {
+
+}
+
+/* ------------------СЕКЦИЯ НАША КОМАНДА -------------------*/
+.team {
+    background-color: var(--secondary-background);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-item {
+    background-color: var(--brand-white-color);
+}
+.team-title {     /*Заголовок h3 секция Наша команда*/
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-text {
+
+}
+
+/* -------------------стр Портфолио*/
+.bgc {
+    background-color: var(--main-background);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+/* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
+.filter {
+
+}
+.filter-item {
+
+}
+.btn {
+    color: var(--secondary-color);
+    background-color: var(--btn-background);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.btn:hover, .btn:focus {
+    color: var(--brand-white-color);
+    background-color: var(--accent-color);
+}
+
+/* ------------------СЕКЦИЯ ГАЛЕРЕЯ -------------------------*/
+.gallery {
+
+}
+.gallery-item {
+    background-color: var(--brand-white-color);
+}
+.gallery-title {    /*Заголовок h2 секция Галерея*/
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.gallery-text {
+
+}
+
+
+/* --------------------ПОДВАЛ (FOOTER)--------------------- */
+/* Логотип */
+.footer {
+    background-color: var(--footer-background);
+}
+.contacts {
+
+}
+.contacts-item {
+    
+}
+.logo-white {
+    color: var(--brand-white-color);
+}
+.link-adress {
+    color: var(--brand-white-color);
+    font-size: 14px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.link-contacts {
+    color: var(--mail-footer-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.link-adress:hover, .link-adress:focus, .link-contacts:hover, .link-contacts:focus {
+    color: var(--accent-color);
+}
+
+
