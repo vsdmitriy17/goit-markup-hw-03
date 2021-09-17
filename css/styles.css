@@ -24,7 +24,7 @@
 .link-none {          /*Убираем дикорирование ссылок*/
     text-decoration: none;
 }
-.section-title {   /*Заголовок Секции*/
+.section-title {   /*Заголовок Секции h2*/
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 36px;
@@ -32,7 +32,25 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
+    margin-top: 0;
+}
+.section-a {
+    background-color: rgb(197, 107, 107);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-b {
+    background-color: rgb(211, 211, 86);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid blue;
+}
 
 /* -----------------ШАПКА (HEADER)-------------------- */
 .header {
@@ -167,18 +185,18 @@
 }
 
 /* -------------------стр Портфолио*/
-.bgc {
+/*.bgc {
     background-color: var(--main-background);
+    
+}*/
+/* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
+.filter {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
-/* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
-.filter {
-
-}
 .filter-item {
-
+    
 }
 .btn {
     color: var(--secondary-color);
