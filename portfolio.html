@@ -22,29 +22,32 @@
 <body class="body">
 <!--ШАПКА (HEADER)-->
 <header class="header">
-    <!--Навигация-->
-    <nav>
-        <!--Логотип-->
-        <a href="" class="link-none logo">Web<span class="logo-black">Studio</span></a>
-        <ul class="site-nav list-none">
-            <li class="site-nav-item"><a href="./index.html" class="link-none site-nav-link">Студия</a></li>
-            <li class="site-nav-item"><a href="./portfolio.html" class="link-none site-nav-link current">Портфолио</a></li>
-            <li class="site-nav-item"><a href="" class="link-none site-nav-link">Контакты</a></li>
-        </ul>
-    </nav>
+    <div class="conteiner">
+        <!--Навигация-->
+        <nav>
+            <!--Логотип-->
+            <a href="" class="link-none logo">Web<span class="logo-black">Studio</span></a>
+            <ul class="site-nav list-none">
+                <li class="site-nav-item"><a href="./index.html" class="link-none site-nav-link">Студия</a></li>
+                <li class="site-nav-item"><a href="./portfolio.html" class="link-none site-nav-link current">Портфолио</a></li>
+                <li class="site-nav-item"><a href="" class="link-none site-nav-link">Контакты</a></li>
+            </ul>
+        </nav>
 
-    <!--Контакты-->
-    <ul class="contacts-nav list-none">
-        <li class="contacts-nav-item"><a href="mailto:info@devstudio.com"
-                class="link-none contacts-nav-link">info@devstudio.com</a> </li>
-        <li class="contacts-nav-item"><a href="tel:+380961111111" class="link-none contacts-nav-link">+38 096 111 11
-                11</a></li>
-    </ul>
+        <!--Контакты-->
+        <ul class="contacts-nav list-none">
+            <li class="contacts-nav-item"><a href="mailto:info@devstudio.com"
+                    class="link-none contacts-nav-link">info@devstudio.com</a> </li>
+            <li class="contacts-nav-item"><a href="tel:+380961111111" class="link-none contacts-nav-link">+38 096 111 11
+                    11</a>
+            </li>
+        </ul>
+    </div>
 </header>
 
     <main>
         <!-- ФИЛЬТР -->
-        <section /*class="bgc"*/ class="section-a">
+        <section class="section">
             <div class="conteiner">
                 <h1 hidden>Портфолио</h1>
                 <ul class=" filter list-none">
@@ -59,48 +62,66 @@
                 <ul class="gallery list-none">
                     <li class="gallery-item">
                         <img src="./img/image_1.jpg" alt="Ноутбук" width="370" height="294" />
-                        <h2 class="gallery-title">Технокряк</h2>
-                        <p class="gallery-text">Веб-сайт</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Технокряк</h2>
+                            <p class="gallery-text">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_2.jpg" alt="Баскетбол" width="370" height="294" />
-                        <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="gallery-text">Дизайн</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="gallery-text">Дизайн</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_3.jpg" alt="Рекламный постер" width="370" height="294" />
-                        <h2 class="gallery-title">Ресторан Seafood</h2>
-                        <p class="gallery-text">Приложение</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Ресторан Seafood</h2>
+                            <p class="gallery-text">Приложение</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_4.jpg" alt="Наушники" width="370" height="294" />
-                        <h2 class="gallery-title">Проект Prime</h2>
-                        <p class="gallery-text">Маркетинг</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Проект Prime</h2>
+                            <p class="gallery-text">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_5.jpg" alt="Две коробки" width="370" height="294" />
-                        <h2 class="gallery-title">Проект Boxes</h2>
-                        <p class="gallery-text">Приложение</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Проект Boxes</h2>
+                            <p class="gallery-text">Приложение</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_6.jpg" alt="Монитор" width="370" height="294" />
-                        <h2 class="gallery-title">Inspiration has no Borders</h2>
-                        <p class="gallery-text">Веб-сайт</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Inspiration has no Borders</h2>
+                            <p class="gallery-text">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_7.jpg" alt="Книга" width="370" height="294" />
-                        <h2 class="gallery-title">Издание Limited Edition</h2>
-                        <p class="gallery-text">Дизайн</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Издание Limited Edition</h2>
+                            <p class="gallery-text">Дизайн</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_8.jpg" alt="Бирка" width="370" height="294" />
-                        <h2 class="gallery-title">Проект LAB</h2>
-                        <p class="gallery-text">Маркетинг</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Проект LAB</h2>
+                            <p class="gallery-text">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="gallery-item">
                         <img src="./img/image_9.jpg" alt="Работа с ноутбуком" width="370" height="294" />
-                        <h2 class="gallery-title">Growing Business</h2>
-                        <p class="gallery-text">Приложение</p>
+                        <div class="gallery-card">
+                            <h2 class="gallery-title">Growing Business</h2>
+                            <p class="gallery-text">Приложение</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -109,21 +130,24 @@
 
     <!--ПОДВАЛ (FOOTER)-->
     <footer class="footer">
-        <!--Логотип-->
-        <a href="" class="link-none logo">Web<span class="logo-white">Studio</span></a>
-        <address>
-            <ul class="contacts list-none">
-                <li class="contacts-item">
-                    <a href="" class="link-none link-adress">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="contacts-item">
-                    <a href="mailto:info@devstudio.com" class="link-none link-contacts">info@devstudio.com</a>
-                </li>
-                <li class="contacts-item">
-                    <a href="tel:+380961111111" class="link-none link-contacts">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="conteiner">
+            <!--Логотип-->
+            <a href="" class="link-none logo">Web<span class="logo-white">Studio</span></a>
+            <address>
+                <ul class="contacts list-none">
+                    <li class="contacts-item">
+                        <a href="" class="link-none link-adress">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="mailto:info@devstudio.com"
+                            class="link-none link-contacts link-distance">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <a href="tel:+380961111111" class="link-none link-contacts">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
