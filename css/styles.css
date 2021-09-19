@@ -319,7 +319,7 @@ h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
 .gallery-item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
-.gallery-block {
+.gallery-block {  /*Убирем зазор (браузерный) под изображениями*/
     display: block;
 }
 
@@ -360,6 +360,7 @@ h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
 .link-adress {
     color: var(--brand-white-color);
 
+    font-style: normal;
     font-size: 14px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -370,6 +371,7 @@ h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
 .link-contacts {
     color: var(--mail-footer-color);
 
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
