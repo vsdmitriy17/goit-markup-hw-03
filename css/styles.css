@@ -12,6 +12,7 @@
     --btn-background: #F5F4FA; /*Цвет кнопки*/
     --header-background: #FFFFFF; /*Фон Header*/
     --item-gap: 30px; /*Зазор между элементами сетки*/
+    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* ----------------ОБЩИЕ КЛАССЫ СЕКЦИЙ------------------ */
@@ -70,6 +71,7 @@ img {       /*Убираем зазор под изображением, огр�
 
 }
 
+
 /* -----------------ШАПКА (HEADER)-------------------- */
 .header {
     background-color: var(--header-background);
@@ -99,7 +101,7 @@ img {       /*Убираем зазор под изображением, огр�
 /* Навигация */
 .site-nav {
     display: flex;
-    padding-left: 93px;
+    margin-left: 93px;
 }
 .site-nav-item:not(:last-child) {
     margin-right: 50px;
@@ -160,8 +162,13 @@ img {       /*Убираем зазор под изображением, огр�
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    display: inline-block;
+    display: flex;
+    width: 696px;
     margin-bottom: 30px;
+}
+.title-center {
+    display: flex;
+    justify-content: center;
 }
 .hero-button {
     color: var(--brand-white-color);
@@ -174,6 +181,7 @@ img {       /*Убираем зазор под изображением, огр�
 
     cursor: pointer;
 
+    border: transparent;
     display: inline-block;
     align-items: center;
     text-align: center;
@@ -190,15 +198,15 @@ img {       /*Убираем зазор под изображением, огр�
     padding-bottom: 0;
 }
 .features {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    
     display: flex;
     justify-content: center;
     margin-right: calc( -1 * var(--item-gap));
 }
 .features-item {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
     flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
     margin-right: var(--item-gap);
 }
@@ -232,19 +240,22 @@ img {       /*Убираем зазор под изображением, огр�
     background-color: var(--secondary-background);
 }
 .team {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-
     display: flex;
     justify-content: center;
     margin-right: calc( -1 * var(--item-gap));
 }
 .team-item {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
     background-color: var(--brand-white-color);
     flex-basis: calc(100% / 4 - var(--item-gap)); /*----calc((100% / кол-во элементов в строке - значение марджина)----*/
     margin-right: var(--item-gap);
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .team-card {
@@ -268,14 +279,14 @@ img {       /*Убираем зазор под изображением, огр�
     
 /* ------------------СЕКЦИЯ ФИЛЬТР-------------------------- */
 .filter {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-
-    padding-left: 0;
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+}
+.filter-item {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px; 
@@ -285,6 +296,7 @@ img {       /*Убираем зазор под изображением, огр�
     background-color: var(--btn-background);
 
     cursor: pointer;
+    border: transparent;
 
     font-family: inherit;
     font-weight: 500;
