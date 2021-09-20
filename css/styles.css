@@ -17,7 +17,9 @@
 
 /* ----------------ОБЩИЕ КЛАССЫ СЕКЦИЙ------------------ */
 .body {                /*Цвет и Шрифт текста параграфов в секциях*/
+    background-color: var(--main-background);
     color: var(--main-color);
+
     font-family: Roboto, sans-serif;
 }
 .list-none {       /*Убираем маркировку списка, сбрасываем марджины и падинги*/
@@ -50,8 +52,6 @@ img {       /*Убираем зазор под изображением, огр�
     height: auto;
 }
 .section {      /* Обертка секций контента*/
-    background-color: var(--main-background);
-
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -75,6 +75,7 @@ img {       /*Убираем зазор под изображением, огр�
 /* -----------------ШАПКА (HEADER)-------------------- */
 .header {
     background-color: var(--header-background);
+    border-bottom: 1px solid #ECECEC;
 }
 .conteiner.header-flex {
     display: flex;
@@ -162,8 +163,6 @@ img {       /*Убираем зазор под изображением, огр�
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    display: flex;
-    width: 696px;
     margin-bottom: 30px;
 }
 .title-center {
@@ -181,11 +180,11 @@ img {       /*Убираем зазор под изображением, огр�
 
     cursor: pointer;
 
-    border: transparent;
     display: inline-block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    border: transparent;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -199,7 +198,6 @@ img {       /*Убираем зазор под изображением, огр�
 }
 .features {
     display: flex;
-    justify-content: center;
     margin-right: calc( -1 * var(--item-gap));
 }
 .features-item {
@@ -360,9 +358,6 @@ img {       /*Убираем зазор под изображением, огр�
 
 .logo-white {
     color: var(--brand-white-color);
-
-    display: inline-block;
-    margin-bottom: 20px;
 }
 .link-adress {
     color: var(--brand-white-color);
@@ -374,6 +369,7 @@ img {       /*Убираем зазор под изображением, огр�
 
     display: inline-block;
     margin-bottom: 9px;
+    margin-top: 20px;
 }
 .link-contacts {
     color: var(--mail-footer-color);
@@ -382,11 +378,14 @@ img {       /*Убираем зазор под изображением, огр�
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
-.link-distance {
+
     display: inline-block;
     margin-bottom: 9px;
 }
+.link-contacts:last-child {
+    margin-bottom: 0;
+}
+
 .link-adress:hover, .link-adress:focus, .link-contacts:hover, .link-contacts:focus {
     color: var(--accent-color);
 }
