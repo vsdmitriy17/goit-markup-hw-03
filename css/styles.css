@@ -359,6 +359,15 @@ img {       /*Убираем зазор под изображением, огр�
 .logo-white {
     color: var(--brand-white-color);
 }
+.footer-item {
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+.footer-item:first-child {
+    margin-top: 20px;
+}
 .link-adress {
     color: var(--brand-white-color);
 
@@ -366,10 +375,6 @@ img {       /*Убираем зазор под изображением, огр�
     font-size: 14px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
-    display: inline-block;
-    margin-bottom: 9px;
-    margin-top: 20px;
 }
 .link-contacts {
     color: var(--mail-footer-color);
@@ -378,12 +383,6 @@ img {       /*Убираем зазор под изображением, огр�
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
-    display: inline-block;
-    margin-bottom: 9px;
-}
-.link-contacts:last-child {
-    margin-bottom: 0;
 }
 
 .link-adress:hover, .link-adress:focus, .link-contacts:hover, .link-contacts:focus {
