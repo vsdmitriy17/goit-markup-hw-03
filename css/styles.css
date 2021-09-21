@@ -11,10 +11,20 @@
     --header-border: #ECECEC; /* Цвет граници Header*/
     --gallery-border: #EEEEEE; /* Цвет граници Gallery-card */
     --item-gap: 30px; /*Зазор между элементами сетки*/
-    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); /* Тень для карточек*/
+    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); /* Тень для карточек "Наша команда"*/
 }
 
 /* ----------------ОБЩИЕ КЛАССЫ СЕКЦИЙ------------------ */
+h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img {       /*Убираем зазор под изображением, ограничиваем габариты максимально 100% ширины*/
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .body {                /*Фон, цвет и Шрифт текста параграфов в секциях*/
     background-color: var(--brand-white-color);
     color: var(--main-color);
@@ -29,6 +39,24 @@
 .link-none {          /*Убираем дикорирование ссылок*/
     text-decoration: none;
 }
+.visually-hiden {      /*--- Скрывает элементы----*/
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+.conteiner {   /*Контейнер для центрирования шапки, контента и футера*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1200px;
+}
+.conteiner.center {    /*Центрирование заголовков*/
+    text-align: center;
+}
 .section-title {   /*Заголовок Секции h2*/
     color: var(--secondary-color);
 
@@ -41,41 +69,14 @@
     display: inline-block;
     margin-bottom: 50px;
 }
-h1, h2, h3, p, ul {  /*Сброс марджинов браузера*/
-    margin-top: 0;
-    margin-bottom: 0;
-}
-img {       /*Убираем зазор под изображением, ограничиваем габариты максимально 100% ширины*/
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 .section {      /* Обертка секций контента*/
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-.conteiner {   /*Контейнер для центрирования шапки, контента и футера*/
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    width: 1200px;
-}
-.conteiner.center {    /*Центрирование заголовков*/
-    text-align: center;
-}
 .card-thumb {
 
 }
-.visually-hiden {      /*--- Скрывает элементы----*/
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
+
 
 
 /* -----------------ШАПКА (HEADER)-------------------- */
