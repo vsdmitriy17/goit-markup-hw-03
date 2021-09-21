@@ -3,21 +3,20 @@
     --main-color: #757575; /*Основной цвет текста - цвет абзаца*/
     --secondary-color: #212121; /*Вторичный цвет текста - цвет заголовков*/
     --accent-color: #2196F3; /*Акцент - цвет ссылок*/
-    --brand-white-color: #FFFFFF; /*Основной белый цвет логотип, футер, герой*/
+    --brand-white-color: #FFFFFF; /*Основной белый цвет фона, логотип, текст футер, герой*/
     --logo-black-color: #000000; /*Цвет логотипа в шапке*/
     --mail-footer-color: rgba(255, 255, 255, 0.6); /*Цвет почты футера*/
-    --main-background: #FFFFFF; /*Основной цвет фона*/
-    --secondary-background: #F5F4FA; /*Вторичный цвет фона*/
+    --secondary-background: #F5F4FA; /*Вторичный цвет фона, цвет кнопок*/
     --footer-background: #2F303A; /*Фон футера и Героя*/
-    --btn-background: #F5F4FA; /*Цвет кнопки*/
-    --header-background: #FFFFFF; /*Фон Header*/
+    --header-border: #ECECEC; /* Цвет граници Header*/
+    --gallery-border: #EEEEEE; /* Цвет граници Gallery-card */
     --item-gap: 30px; /*Зазор между элементами сетки*/
-    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); /* Тень для карточек*/
 }
 
 /* ----------------ОБЩИЕ КЛАССЫ СЕКЦИЙ------------------ */
-.body {                /*Цвет и Шрифт текста параграфов в секциях*/
-    background-color: var(--main-background);
+.body {                /*Фон, цвет и Шрифт текста параграфов в секциях*/
+    background-color: var(--brand-white-color);
     color: var(--main-color);
 
     font-family: Roboto, sans-serif;
@@ -70,12 +69,19 @@ img {       /*Убираем зазор под изображением, огр�
 .card-thumb {
 
 }
+.visually-hiden {      /*--- Скрывает элементы----*/
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 
 
 /* -----------------ШАПКА (HEADER)-------------------- */
 .header {
-    background-color: var(--header-background);
-    border-bottom: 1px solid #ECECEC;
+    background-color: var(--brand-white-color);
+    border-bottom: 1px solid var(--header-border);
 }
 .conteiner.header-flex {
     display: flex;
@@ -194,13 +200,18 @@ img {       /*Убираем зазор под изображением, огр�
 
 /* ------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
 .section.features-padding {
+    outline: 1px solid green; /* рамка секции*/
     padding-bottom: 0;
 }
 .features {
+    outline: 1px solid tomato; /* рамка списка*/
+
     display: flex;
     margin-right: calc( -1 * var(--item-gap));
 }
 .features-item {
+    outline: 1px solid teal; /* рамка элемента списка*/
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -291,7 +302,7 @@ img {       /*Убираем зазор под изображением, огр�
 }
 .btn {
     color: var(--secondary-color);
-    background-color: var(--btn-background);
+    background-color: var(--secondary-background);
 
     cursor: pointer;
     border: transparent;
@@ -333,7 +344,7 @@ img {       /*Убираем зазор под изображением, огр�
 
 .gallery-card {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--gallery-border);
 }
 .gallery-title {    /*Заголовок h2 секция Галерея*/
     color: var(--secondary-color);
