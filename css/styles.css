@@ -200,17 +200,17 @@ img {       /*Убираем зазор под изображением, огр�
 
 /* ------------------СЕКЦИЯ ОСОБЕННОСТИ-------------------- */
 .section.features-padding {
-    outline: 1px solid green; /* рамка секции*/
+    /*outline: 1px solid green;*/ /* рамка секции*/
     padding-bottom: 0;
 }
 .features {
-    outline: 1px solid tomato; /* рамка списка*/
+    /*outline: 1px solid tomato;*/ /* рамка списка*/
 
     display: flex;
     margin-right: calc( -1 * var(--item-gap));
 }
 .features-item {
-    outline: 1px solid teal; /* рамка элемента списка*/
+    /*outline: 1px solid teal;*/ /* рамка элемента списка*/
 
     font-size: 14px;
     line-height: 1.71;
